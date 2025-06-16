@@ -44,7 +44,7 @@ try:
         print(f"✅ 커밋 완료: {commit_msg}")
 
     subprocess.run(["git", "push", "-u", "origin", BRANCH], check=True)
-    print("🚀 원격 저장소에 push 완료!")
+    print("🚀 원격 저장소에 업로드 완료!")
 
 except subprocess.CalledProcessError as e:
     print("❌ Git 명령 오류:", e.stderr)
